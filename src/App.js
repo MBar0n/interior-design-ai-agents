@@ -110,7 +110,7 @@ function ProductScout() {
             onChange={(e) => setCategory(e.target.value)}
           >
             <option value="">Select Category</option>
-            <option value="Sofa">Sifa</option>
+            <option value="Sofa">Sofa</option>
             <option value="Chair">Chair</option>
             <option value="Lighting">Lighting</option>
             <option value="Rug">Rug</option>
@@ -219,8 +219,8 @@ function ProductScout() {
                   <h4 className="font-semibold text-lg text-indigo-700">{product.name}</h4>
                   <p className="text-sm text-gray-600">Style: {product.style} | Material: {product.material}</p>
                   <p className="text-sm text-gray-600">Est. Price: {product.price}</p>
-                  {/* FIX: Changed href="#" to href="javascript:void(0)" */}
-                  <a href="javascript:void(0)" className="text-indigo-500 hover:underline text-sm mt-1 inline-block">View Details (Example)</a>
+                  {/* FIX: Changed href to a placeholder URL */}
+                  <a href="https://example.com/product-details" target="_blank" rel="noopener noreferrer" className="text-indigo-500 hover:underline text-sm mt-1 inline-block">View Details (Example)</a>
                 </div>
               </div>
             ))}
@@ -246,7 +246,7 @@ function ClientCommunicator() {
     setDraftMessage(null); // Clear previous draft
     setTimeout(() => {
       // Simulate AI response with placeholder data
-      const date = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      // FIX: Removed unused 'date' variable
       let subject = `Project Update - ${projectName || 'Your Project'}`;
       let body = `Dear ${clientName || 'Client Name'},
 
@@ -886,9 +886,11 @@ function ProjectTracker() {
               <p className="text-sm text-gray-600 mt-1">{projectOverview.progressPercentage}% Complete (Example)</p>
             </div>
 
-            {/* FIX: Changed href="#" to href="javascript:void(0)" */}
+            {/* FIX: Changed href to a placeholder URL */}
             <a
-              href="javascript:void(0)"
+              href="https://example.com/project-report"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-4 inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-200 ease-in-out"
             >
               <span className="mr-2">🔗</span> View Full Project Report (Example)
